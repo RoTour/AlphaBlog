@@ -1,0 +1,25 @@
+<h1>Here are all the articles created</h1>
+
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <% @articles.each do |item| %>
+    <tr>
+      <td><%= item.title %></td>
+      <td><%= item.description %></td>
+      <td>PlaceHolder</td>
+    </tr>
+  <% end %>
+
+
+  </tbody>
+</table>

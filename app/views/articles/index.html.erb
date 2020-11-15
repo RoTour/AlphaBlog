@@ -12,7 +12,8 @@
   </thead>
   <tbody>
 
-  <%= link_to "Create new Article", new_article_path %>
+  <%= link_to "Create new Article", new_article_path %><br>
+  <%= link_to "Return to HomePage", root_path %>
   <% @articles.each do |item| %>
     <tr>
       <td><%= item.title %></td>

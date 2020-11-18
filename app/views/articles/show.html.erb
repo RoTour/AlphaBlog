@@ -8,9 +8,9 @@
         <div class="card-header font-italic">
           <div class="d-flex justify-content-center">
             <%= link_to gravatar_for(@article.user), user_path(@article.user), class: "mr-3" %>
-            <div class="d-flex flex-column">
-              by <%= @article.user.username %>
-<!--              TODO ("Change uploaded_at of articles to created_at")-->
+            <div class="d-flex flex-column text-left">
+              by: <%= @article.user.username %><br>
+              the: <%= @article.created_at.strftime("%Y %B %d") %>
             </div>
           </div>
         </div>
